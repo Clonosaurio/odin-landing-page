@@ -10,8 +10,8 @@ body {
     display: flex;
     flex: auto;
     color: white;
-    background-color: #1f2937;
     padding: 10px 100px;
+    gap: 10px;
 }
 
 .logo {
@@ -28,15 +28,78 @@ body {
 .content {
     display: flex;
     flex: auto;
+    flex-direction: column;
+    align-items: stretch;
     color: white;
-    background-color: #1f2937;
-    padding: 0px 100px;
+}
+
+.section {
+    display: flex;
+    flex: auto;
+    padding: 0px 100px
+}
+
+.column {
+    flex-direction: column;
 }
 
 .left-item,
 .right-item {
     flex: 1 1 0%;
 }
+
+.left-item .title {
+    flex: auto;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.left-item .text {
+    flex: auto;
+    text-align: justify;
+}
+
+.left-item .button {
+    flex: auto;
+    padding: 10px 0px;
+}
+
+.text {
+    flex: auto;
+}
+
+button {
+    padding: 5px 25px;
+    background-color: #3882f6;
+    color: white;
+    border-radius: 8px;
+}
+
+/*--------------------*/
+
+.illustrations {
+    display: flex;
+    flex: auto;
+    gap: 20px;
+}
+
+.illustration {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+}
+
+.illustration .image {
+    flex: 1 1 auto;
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
 
 /*--------------------*/
 
@@ -45,9 +108,24 @@ body {
     flex: auto;
 }
 
+/*--------------------*/
 
+.bg1 {
+    background-color: #1f2937;
+    color: white;
+}
+
+.bg2 {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.bg3 {
+    background-color: #e5e7eb;
+    color: black;
+}
 
 * {
-    border: 3px solid gray;
+    border: 1px solid gray;
     /*margin: 3px;*/
 }
