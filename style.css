@@ -1,7 +1,13 @@
 body {
     display: flex;
+    flex: auto;
     flex-direction: column;
     margin: 0px;
+    /**/width: 1400px;
+    /**/align-items: stretch;
+    /**/background-color: rgb(30, 30, 30);
+    /**/margin-left: auto;
+    /**/margin-right: auto;
 }
 
 /*--------------------*/
@@ -10,7 +16,7 @@ body {
     display: flex;
     flex: auto;
     color: white;
-    padding: 10px 250px;
+    padding: 20px 220px;
     gap: 20px;
 }
 
@@ -38,7 +44,7 @@ body {
 .section {
     display: flex;
     flex: auto;
-    padding: 50px 250px;
+    padding: 50px 220px;
     gap: 20px;
 }
 
@@ -73,6 +79,8 @@ body {
 .left-item .text {
     flex: auto;
     text-align: justify;
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .left-item .button {
@@ -87,9 +95,10 @@ body {
 .left-item .button button {
     padding: 10px 30px;
     background-color: #3882f6;
-    color: white;
+    color: #e5e7eb;
     border-radius: 8px;
-    border: 0px;    
+    border: 0px;
+    font-size: 18px;
 }
 
 
@@ -98,6 +107,9 @@ body {
 .title2 {
     text-align: center;
     margin: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 
 .illustrations {
@@ -152,6 +164,22 @@ body {
     border-radius: 10px;
     color: white;
 }
+
+/*--------------------*/
+
+#quote {
+    font-size: 36px;
+    color: #1f2973;
+    font-style: italic;
+    flex-direction: column;
+}
+
+.signed {
+    align-self: flex-end;
+    font-style: normal;
+    color: #1f2937;
+}
+
 
 /*--------------------*/
 
