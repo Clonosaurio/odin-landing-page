@@ -10,17 +10,19 @@ body {
     display: flex;
     flex: auto;
     color: white;
-    padding: 10px 100px;
+    padding: 10px 250px;
     gap: 20px;
 }
 
 .logo {
     flex: auto;
+    font-size: 32px;
 }
 
 .header-links {
     flex: 0 0 auto;
     justify-content: flex-end;
+    font-size: 18px;
 }
 
 /*--------------------*/
@@ -36,7 +38,8 @@ body {
 .section {
     display: flex;
     flex: auto;
-    padding: 50px 100px
+    padding: 50px 250px;
+    gap: 20px;
 }
 
 .column {
@@ -46,6 +49,19 @@ body {
 .left-item,
 .right-item {
     flex: 1 1 0%;
+}
+
+.right-item {
+    border: 1px solid blue;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.right-item img {
+    flex: 1 1 auto;
+    width: 522px;
+    height: 237px;
+    padding: 0px;
 }
 
 .left-item .title {
@@ -64,42 +80,78 @@ body {
     padding: 10px 0px;
 }
 
-.text {
+.left-item .text {
     flex: auto;
 }
 
-button {
-    padding: 5px 25px;
+.left-item .button button {
+    padding: 10px 30px;
     background-color: #3882f6;
     color: white;
     border-radius: 8px;
+    border: 0px;    
 }
 
+
 /*--------------------*/
+
+.title2 {
+    text-align: center;
+    margin: 20px;
+}
 
 .illustrations {
     display: flex;
     flex: auto;
-    gap: 20px;
+    gap: 10px;
+    justify-content: space-evenly;
 }
 
 .illustration {
     display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 180px;
+}
+
+.illustration img {
+    flex: 1 1 auto;
+    border-radius: 10px;
+}
+
+.illustration .text {
+    flex: 1 1 auto;
+}
+
+/*--------------------*/
+
+.frame,
+.container,
+.container .title,
+.container .text {
+    display: flex;
     flex: auto;
+    background-color: #3882f6;
+    color: white;
+}
+
+.frame {
+    padding: 50px 100px;
+}
+
+.container {
     flex-direction: column;
 }
 
-.illustration .image {
+.frame .button button {
     flex: 1 1 auto;
-    border: 2px solid blue;
+    align-self: center;
+    background-color: #3882f6;
+    padding: 10px 30px;
+    border: 2px solid white;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
+    color: white;
 }
-
-
-
-
 
 /*--------------------*/
 
@@ -129,7 +181,7 @@ button {
     color: black;
 }
 
-* {
+/** {
     border: 1px solid gray;
-    /*margin: 3px;*/
-}
+    margin: 3px;
+}*/
