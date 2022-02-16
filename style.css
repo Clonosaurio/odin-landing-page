@@ -6,13 +6,12 @@ body {
     margin: 0px;
     /*this will set the
     body width*/
-    width: 1400px;
+    /*width: 1400px;
     align-items: stretch;
     background-color: rgb(30, 30, 30);
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;*/
 }
-
 /*--------------------*/
 
 .header {
@@ -102,9 +101,9 @@ a:link, a:visited {
 }
 
 .right-item {
-    flex: 0 0 auto;
+    flex: 1 1 0%;
     width: 522px;
-    height: 237px;
+    height: auto;
     padding: 0px;
 }
 
