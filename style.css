@@ -105,6 +105,7 @@ a:link, a:visited {
     width: 522px;
     height: auto;
     padding: 0px;
+    object-fit: cover;
 }
 
 /*--------------------*/
