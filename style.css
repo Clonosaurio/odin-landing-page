@@ -4,13 +4,13 @@ body {
     flex: 1 1 auto;
     flex-direction: column;
     margin: 0px;
-    /*this will limit the
-    body max width*/
-    /*width: 1400px;
+    /*this will set the
+    body width*/
+    width: 1400px;
     align-items: stretch;
     background-color: rgb(30, 30, 30);
     margin-left: auto;
-    margin-right: auto;*/
+    margin-right: auto;
 }
 
 /*--------------------*/
@@ -21,14 +21,17 @@ body {
     color: white;
     padding: 20px 220px;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .logo {
     flex: auto;
-    font-size: 32px;
+    /*font-size: 32px;
+    font-family: sans-serif;*/
 }
 
 .header-links {
+    display: flex;
     flex: 0 0 auto;
     justify-content: flex-end;
     font-size: 18px;
@@ -47,7 +50,6 @@ a:link, a:visited {
     flex: auto;
     flex-direction: column;
     align-items: stretch;
-    color: white;
 }
 
 .section {
@@ -61,21 +63,12 @@ a:link, a:visited {
     flex-direction: column;
 }
 
-.left-item,
-.right-item {
+.top {
+    justify-content: space-between;
+}
+
+.left-item {
     flex: 1 1 0%;
-}
-
-.right-item {
-    justify-content: stretch;
-    align-items: stretch;
-}
-
-.right-item img {
-    flex: 1 1 auto;
-    width: 522px;
-    height: 237px;
-    padding: 0px;
 }
 
 .left-item .title {
@@ -108,6 +101,12 @@ a:link, a:visited {
     font-size: 18px;
 }
 
+.right-item {
+    flex: 0 0 auto;
+    width: 522px;
+    height: 237px;
+    padding: 0px;
+}
 
 /*--------------------*/
 
